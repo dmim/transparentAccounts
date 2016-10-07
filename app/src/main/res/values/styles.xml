@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ListVerticalLinearLayout">
+        <item name="android:paddingLeft">@dimen/list_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/list_horizontal_padding</item>
+        <item name="android:paddingTop">@dimen/list_vertical_padding</item>
+        <item name="android:paddingBottom">@dimen/list_vertical_padding</item>
+    </style>
+
+    <style name="ListHorizontalLinearLayout">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="ListTitle">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorListTitle</item>
+    </style>
+
+    <style name="ListValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorListValue</item>
+    </style>
+
+    <style name="ListValue2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorListValue2</item>
+    </style>
+
+</resources>

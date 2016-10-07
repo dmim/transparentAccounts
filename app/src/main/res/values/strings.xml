@@ -1,0 +1,22 @@
+<resources>
+    <!-- Account -->
+    <string name="app_name">TransparentAccounts</string>
+    <string name="account">Account:</string>
+    <string name="iban">IBAN:</string>
+    <string name="bank">Bank:</string>
+    <string name="transparency">Transparent:</string>
+    <string name="publication">Publication to:</string>
+    <string name="amount">Amount:</string>
+    <string name="actualized">Actualized:</string>
+    <string name="copy_account">Copy account</string>
+    <string name="copy_iban">Copy IBAN</string>
+    <string name="account_copied">Account number is copied to clipboard</string>
+    <string name="iban_copied">IBAN is copied to clipboard</string>
+
+    <!-- Transaction -->
+    <string name="transactions">Transactions:</string>
+    <string name="dueDate">Due date:</string>
+    <string name="processingDate">Processing date:</string>
+    <string name="specificSymbol">Specific symbol:</string>
+    <string name="constantSymbol">Constant symbol:</string>
+</resources>

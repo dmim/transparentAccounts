@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/ListVerticalLinearLayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/ListHorizontalLinearLayout"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ListTitle"
+            android:layout_height="wrap_content"
+            android:text="@string/account"/>
+
+        <TextView
+            style="@style/ListValue"
+            android:id="@+id/acc_number"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ListTitle"
+            android:layout_height="wrap_content"
+            android:text="@string/bank" />
+
+        <TextView
+            style="@style/ListValue"
+            android:id="@+id/bank"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ListTitle"
+            android:layout_height="wrap_content"
+            android:text="@string/iban" />
+
+        <TextView
+            style="@style/ListValue"
+            android:id="@+id/iban"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ListTitle"
+            android:layout_height="wrap_content"
+            android:text="@string/transparency" />
+
+        <TextView
+            style="@style/ListValue2"
+            android:id="@+id/transparency_from"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/ListValue2"
+            android:layout_height="wrap_content"
+            android:text=" - " />
+
+        <TextView
+            style="@style/ListValue2"
+            android:id="@+id/transparency_to"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ListTitle"
+            android:layout_height="wrap_content"
+            android:text="@string/publication" />
+
+        <TextView
+            style="@style/ListValue2"
+            android:id="@+id/publication_to"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ListTitle"
+            android:layout_height="wrap_content"
+            android:text="@string/actualized" />
+
+        <TextView
+            style="@style/ListValue2"
+            android:id="@+id/actualized"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/ListTitle"
+            android:layout_height="wrap_content"
+            android:text="@string/amount" />
+
+        <TextView
+            style="@style/ListValue"
+            android:id="@+id/amount"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            style="@style/ListValue"
+            android:id="@+id/currency"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/transactions"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
+        android:layout_marginTop="5dp"
+        tools:listitem="@layout/transaction_list_item"/>
+</LinearLayout>
